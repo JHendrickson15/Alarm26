@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		169661912280C9C800BDA470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661902280C9C800BDA470 /* AppDelegate.swift */; };
-		169661932280C9C800BDA470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661922280C9C800BDA470 /* ViewController.swift */; };
 		169661962280C9C800BDA470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169661942280C9C800BDA470 /* Main.storyboard */; };
 		169661982280C9C900BDA470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169661972280C9C900BDA470 /* Assets.xcassets */; };
 		1696619B2280C9C900BDA470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169661992280C9C900BDA470 /* LaunchScreen.storyboard */; };
 		169661A62280C9C900BDA470 /* Alarm26Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661A52280C9C900BDA470 /* Alarm26Tests.swift */; };
 		169661B12280C9C900BDA470 /* Alarm26UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661B02280C9C900BDA470 /* Alarm26UITests.swift */; };
+		169661C32280CD3000BDA470 /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661C22280CD3000BDA470 /* AlarmDetailTableViewController.swift */; };
+		169661C52280CD4500BDA470 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661C42280CD4500BDA470 /* AlarmListTableViewController.swift */; };
+		169661C72280CF8D00BDA470 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661C62280CF8D00BDA470 /* SwitchTableViewCell.swift */; };
+		169661CA2280D37400BDA470 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661C92280D37400BDA470 /* Alarm.swift */; };
+		169661CE2280D44300BDA470 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169661CD2280D44300BDA470 /* AlarmController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		1696618D2280C9C800BDA470 /* Alarm26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm26.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169661902280C9C800BDA470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		169661922280C9C800BDA470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		169661952280C9C800BDA470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169661972280C9C900BDA470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1696619A2280C9C900BDA470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		169661AC2280C9C900BDA470 /* Alarm26UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alarm26UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		169661B02280C9C900BDA470 /* Alarm26UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm26UITests.swift; sourceTree = "<group>"; };
 		169661B22280C9C900BDA470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169661C22280CD3000BDA470 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
+		169661C42280CD4500BDA470 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
+		169661C62280CF8D00BDA470 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		169661C92280D37400BDA470 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		169661CD2280D44300BDA470 /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,12 @@
 		1696618F2280C9C800BDA470 /* Alarm26 */ = {
 			isa = PBXGroup;
 			children = (
-				169661902280C9C800BDA470 /* AppDelegate.swift */,
-				169661922280C9C800BDA470 /* ViewController.swift */,
+				169661BE2280C9F700BDA470 /* Resources */,
 				169661942280C9C800BDA470 /* Main.storyboard */,
-				169661972280C9C900BDA470 /* Assets.xcassets */,
-				169661992280C9C900BDA470 /* LaunchScreen.storyboard */,
-				1696619C2280C9C900BDA470 /* Info.plist */,
+				169661C12280CCF300BDA470 /* View Controllers */,
+				169661C82280CF9000BDA470 /* Views */,
+				169661CC2280D43300BDA470 /* Model Controller */,
+				169661CB2280D37800BDA470 /* Model */,
 			);
 			path = Alarm26;
 			sourceTree = "<group>";
@@ -123,6 +131,50 @@
 				169661B22280C9C900BDA470 /* Info.plist */,
 			);
 			path = Alarm26UITests;
+			sourceTree = "<group>";
+		};
+		169661BE2280C9F700BDA470 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				169661902280C9C800BDA470 /* AppDelegate.swift */,
+				169661972280C9C900BDA470 /* Assets.xcassets */,
+				169661992280C9C900BDA470 /* LaunchScreen.storyboard */,
+				1696619C2280C9C900BDA470 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		169661C12280CCF300BDA470 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				169661C22280CD3000BDA470 /* AlarmDetailTableViewController.swift */,
+				169661C42280CD4500BDA470 /* AlarmListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		169661C82280CF9000BDA470 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				169661C62280CF8D00BDA470 /* SwitchTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		169661CB2280D37800BDA470 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				169661C92280D37400BDA470 /* Alarm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		169661CC2280D43300BDA470 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				169661CD2280D44300BDA470 /* AlarmController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169661932280C9C800BDA470 /* ViewController.swift in Sources */,
+				169661C32280CD3000BDA470 /* AlarmDetailTableViewController.swift in Sources */,
+				169661C72280CF8D00BDA470 /* SwitchTableViewCell.swift in Sources */,
+				169661CA2280D37400BDA470 /* Alarm.swift in Sources */,
+				169661C52280CD4500BDA470 /* AlarmListTableViewController.swift in Sources */,
 				169661912280C9C800BDA470 /* AppDelegate.swift in Sources */,
+				169661CE2280D44300BDA470 /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43BBC72U4R;
-				INFOPLIST_FILE = Alarm26/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Alarm26/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43BBC72U4R;
-				INFOPLIST_FILE = Alarm26/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Alarm26/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
